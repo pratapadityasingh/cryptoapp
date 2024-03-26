@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+
+
+    background: #fff;
+}
+
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+.hero_bg {
+    background-image: url('/assest/herobg.b0559aff.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.hero_bg .hero_bg1
+{
+    position: relative;
+}
+.hero_top {
+    border-top: 2px solid #cfff13;
+}
+.hero_bg1:before {
+    background-image: url("./../../public/assest/herobefore.png");
+    content: "";
+    position: absolute;
+    bottom: -36px;
+    left: 3px;
+    width: 365px;
+    height: 513px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    
+}
+.second_bg{
+    position: relative;
+}
+.second_bg:before {
+    width: 83%;
+    content: "";
+    background: #cfff13;
+    border-radius: 0 300px 300px 0;
+    height: 573px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+.second_bg:after {
+    background-image: url("./../../public/assest/secondb.png");
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 465px;
+    height: 415px;
+    background-repeat: no-repeat;
+}
+.lalbag::before
+{
+        content: "";
+        position: absolute;
+        background-image: url("./../../public/assest/secondbg2.png");
+        width: 888px;
+        height: 578px;
+        background-repeat: no-repeat;
+        top: 0;
+        left: -18%;
+    
+}
+.third_bg {
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+
+.third_bg {
+    background-image: url("./../../public/assest/third2.png");
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.bord-new-line
+{
+    background-image: url("./../../public/assest/bordernew.png");
+    border-radius :15px;
+    padding: 20px;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+.fifth_bg:before {
+    position: relative;
+}
+.fifth_bg:before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 83%;
+    background: #cfff13;
+    border-radius: 300px 0 0 300px;
+    height: 573px;
+    right: 0;
+}
+.six_top
+{
+    border-top: 2px solid white; 
+}
+.six_bg
+{
+    background-image: url(./../../public/assest/backside.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact_bg {
+    background: #cfff13;
+    border-radius: 0 300px 0 0;
+    height: 573px;
+    z-index: 9;
+
+}
+.footer_top
+{
+    border-top: 2px solid white;
+}
+.audit_hero_bg {
+    background-image: url("./../../public/assest/heroimg2.png");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.audit_seconds_bg {
+    background-image: url("./../../public/assest/backsecondaudit.png");
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    min-height: 100vh;
+
+}
+.audit_seconds_bg
+{
+    position: relative;
+}
+.audit_third_bg:before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 0;
+    background: #cfff13;
+    width: 83%;
+    
+    border-radius: 300px 0 0 300px;
+    height: 469px;
+    z-index: 1;
+}
+    
+.fouth_top {
+    border-top: 1px solid #060b2740;
+}
+.Audit_fourth_bg {
+    background-image: url("./../../public/assest/fourthaudit.png");
+    padding: 15px;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+.audit_fifth_bg{
+    position: relative;
+}
+
+.audit_fifth_bg:before {
+    content: "";
+    position: absolute;
+    width: 83%;
+    background: #cfff13;
+    border-radius: 0 300px 300px 0;
+    height: 480px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+audit_berofer:before {
+    background-image: url("./../../public/assest/secondaditbg.png");
+    content: "";
+    position: absolute;
+    width: 888px;
+    height: 578px;
+    background-repeat: no-repeat;
+    z-index: -9;
+    top: 0;
+    left: -18%;
+}
+.audit_services {
+    width: 120px;
+    padding: 10px;
+    border-radius: 0 0 15px 0;
+    background: #d7e022;
+    overflow: hidden;
+    position: absolute;
+}
